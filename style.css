@@ -1,0 +1,244 @@
+.header{
+   height: var(--header-height);
+   background-color: #515154;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+  
+}
+.header__navbar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header__logo-img{
+    max-width: 173px;
+    max-height: 64px;
+    padding: 13px 0 13px 0;
+}
+.header__menu{
+   
+
+}
+.header__menu-list{
+    display: flex;
+    padding-left: 0;
+}
+.header__menu-item{
+  list-style: none;
+}
+.header__menu-item-link{
+   text-decoration: none;
+   font-size: 1.6rem;
+   font-weight: 400;
+   color: var(--text-color);
+   padding: 4px 16px;
+   display: block;
+}
+.header__wrapper{
+   
+}
+.header__wrapper-icon{
+     display: flex;  
+}
+.header__wrapper-icon-search,
+.header__wrapper-icon-cart,
+.header__wrapper-login {
+    width: 30px;
+    color: var(--white-color);
+    margin: 20px 20px;
+}
+
+
+.header__mobile-logo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.header__mobile-wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+
+}
+
+.nar__bars-btn{
+    width: 40px;
+    color: var(--white-color);
+    font-weight: bold;
+    margin: 15px 25px;
+    display: none;
+    
+}
+.header__sort-bars{
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    height: var( --header-sort-bar-height);
+    background-color: var(--white-color);
+    list-style: none;
+    margin: 0;
+   padding-left: 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    display: none;
+
+}
+.header__sort-item{
+    flex: 1;
+}
+.header__sort-link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--black-color);
+    display: block;
+    height: 100%;
+    line-height: var(--header-sort-bar-height);
+    text-align: center;
+    position: relative;
+
+}
+
+.nav__mobile{
+    background-color: var(--white-color);
+    position: fixed;
+    top: calc(var(--header-height) + var(--header-sort-bar-height));
+    min-width: 100%;
+    max-height: 60vh;
+    padding-left: 12px;
+    transform: translateY(calc(-100% - (var(--header-height) + var(--header-sort-bar-height)) ));
+    opacity: 0;
+    transition: transform linear 0.01s,opacity linear 0.01s;
+    display: none;
+}
+.nav__mobile-list{
+    display: block;
+    padding-left: 0;
+    list-style: none;
+}
+.nav__mobile-link{
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1.4rem;
+    display: block;
+    padding: 22px 0 12px 0;
+}
+.nav__mobile-link a{
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 400;
+    padding-left: 12px;
+}
+.nav__mobile-close{
+    width: 30px;
+    position: absolute;
+    font-size: 1.8rem;
+    color: #666;
+    top: 0.8rem;
+    right: 1rem;
+
+}
+.nav__input{
+    display: none;
+}
+.nav__input:checked ~.nav__mobile{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.container{
+    min-height: 1000px;
+}
+.footer{
+   background-color: #1d1d1f;
+ 
+   
+}
+.footer__content{
+    padding: 64px 0 21px 0;
+    border-bottom: 1px solid #3d3d40;
+}
+.footer__logo{
+   
+}
+.footer__logo-img{
+    max-width: 173px;
+    max-height: 64px;
+    border-radius: 2px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 5px #aca9a9;
+}
+.footer__text{
+    font-weight: 400;
+    font-size: 1.4;
+    line-height: 28px;
+    color: #D2D2D7;
+    padding-top: 8px;
+    padding-bottom: 8px;
+ 
+}
+
+
+.footer__social-list{
+    display: flex;
+    padding-left: 0;
+ 
+}
+.footer__social-item{
+   list-style: none;
+
+}
+.footer__social-link{
+    text-decoration: none;    
+}
+.footer__heading{ 
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #D2D2D7;
+}
+.footer__list{
+  padding-left: 0;
+  list-style: none;
+}
+.footer__list-item{
+   font-size: 1,6rem;
+}
+.footer__heading-link{
+   text-decoration: none;
+   color: #86868b;
+}
+.footer__heading-link:hover{
+    text-decoration: underline;
+}
+.footer__heading-link--active{
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+    display: block;   
+}
+.footer__heading-link--active:hover{
+    text-decoration: none;
+}
+.footer__bottom{
+   padding: 20px 0 32px 0;
+}
+.footer__bottom-text{
+   color: #515154;
+   font-size: 1.3rem;
+   line-height: 13px;
+}
+.footer__bottom-text p:nth-child(1){
+    line-height: 20px;
+}
+.footer__bottom-img{
+    margin-top: 20px;
+}
+.footer-img{
+    float: right;
+    width: 139px;
+}
+  
+
